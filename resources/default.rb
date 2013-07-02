@@ -12,6 +12,7 @@ def allow(val)
     template.source 'policy-rc.d.erb'
     template.path '/usr/sbin/policy-rc.d'
     template.mode 0755
+    template.action :create
     # Force this to the front of the line
     node.run_context.resource_collection.all_resources.unshift(template)
   end
