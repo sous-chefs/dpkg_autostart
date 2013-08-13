@@ -1,3 +1,6 @@
+# v0.1.6
+* Fix version number
+
 # v0.1.4
 * Use "heavyweight" resource/provider
 * Fix execution error on initial runs (#2)
