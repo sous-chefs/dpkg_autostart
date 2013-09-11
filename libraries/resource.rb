@@ -21,7 +21,7 @@ class Chef
         rescue Chef::Exceptions::ResourceNotFound
           bin = Chef::Resource::DpkgAutostart.new('bin_file', node.run_context)
           bin.action :create
-          node.run_context.resource_collection.all_resources.unshift(bin)
+          node.run_context.resource_collection.unshift(bin)
         end
       end
     end
