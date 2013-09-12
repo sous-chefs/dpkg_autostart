@@ -16,12 +16,12 @@ class Chef
         node.run_state[:dpkg_autostart_disabled] ||= []
         node.run_state[:dpkg_autostart_disabled].push(name) unless val
         begin
-          node.run_context.resource_collection.lookup('dpkg_autostart[bin_file]')
+          run_context.resource_collection.lookup('dpkg_autostart[bin_file]')
           true
         rescue Chef::Exceptions::ResourceNotFound
-          bin = Chef::Resource::DpkgAutostart.new('bin_file', node.run_context)
+          bin = Chef::Resource::DpkgAutostart.new('bin_file', run_context)
           bin.action :create
-          node.run_context.resource_collection.all_resources.unshift(bin)
+          run_context.resource_collection.all_resources.unshift(bin)
         end
       end
     end
