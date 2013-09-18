@@ -21,7 +21,7 @@ class Chef
           context.resource_collection.lookup('dpkg_autostart[bin_file]')
           true
         rescue Chef::Exceptions::ResourceNotFound
-          bin = Chef::Resource::DpkgAutostart.new('bin_file', node.run_context)
+          bin = Chef::Resource::DpkgAutostart.new('bin_file', context)
           bin.action :create
           current_resources = context.resource_collection.all_resources
           [bin, current_resources].flatten.each_with_index do |res, i|
