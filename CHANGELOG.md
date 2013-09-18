@@ -1,3 +1,8 @@
+# v0.1.8
+* Add support for Chef 10 (#3)
+* Properly update `resource_collection` when unshifting (#4)
+  * Thanks @mpasternacki
+
 # v0.1.6
 * Fix version number
 
