@@ -1,3 +1,6 @@
+# v0.1.10
+* Add support for upstart services (thanks @bkw)
+
 # v0.1.8
 * Add support for Chef 10 (#3)
 * Properly update `resource_collection` when unshifting (#4)
