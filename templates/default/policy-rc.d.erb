@@ -62,7 +62,7 @@ SRV_ARGS=$*
 SRV_DISABLED=0
 ACT_DISABLED=0
 
-if [ ! -x "/etc/init.d/${SRV_NAME}" && ! -f "/etc/init/${SRV_NAME}.conf" ]; then
+if [ ! -x "/etc/init.d/${SRV_NAME}" ] && [ ! -f "/etc/init/${SRV_NAME}.conf" ]; then
     exit 100
 fi
 
