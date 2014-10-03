@@ -1,5 +1,5 @@
 name 'dpkg_autostart'
-version '0.1.12'
+version '0.1.13'
 maintainer 'Chris Roberts'
 maintainer_email 'chrisroberts.code@gmail.com'
 description 'Control service actions initialized from dpkg'
