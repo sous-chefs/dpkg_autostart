@@ -1,3 +1,6 @@
+# v0.1.12
+* Be a noop except on debian family
+
 # v0.1.10
 * Add support for upstart services (thanks @bkw)
 
