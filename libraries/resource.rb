@@ -24,7 +24,7 @@ class Chef
           bin = Chef::Resource::DpkgAutostart.new('bin_file', context)
           bin.action :create
           current_resources = context.resource_collection.all_resources
-          [bin, current_resources].flatten.each_with_index do |res, i|
+          [current_resources, bin].flatten.each_with_index do |res, i|
             context.resource_collection[i] = res
           end
         end
