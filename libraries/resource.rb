@@ -25,7 +25,7 @@ class Chef
           bin.action :create
           current_resources = context.resource_collection.all_resources
           [bin, current_resources].flatten.each_with_index do |res, i|
-            context.resource_collection[i] = res
+            context.resource_collection.insert(res)
           end
         end
       end
