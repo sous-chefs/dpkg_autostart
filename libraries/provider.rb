@@ -20,7 +20,7 @@ class Chef
         template.source 'policy-rc.d.erb'
         template.path '/usr/sbin/policy-rc.d'
         template.mode 0755
-        template.only_if{ node.platform_family?('debian') }
+        template.only_if { node.platform_family?('debian') }
         template.run_action(:create)
         # Force this to the front of the line
       end
