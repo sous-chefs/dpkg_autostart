@@ -45,9 +45,6 @@ and set the services you want to restrict from auto starting:
 node[:dpkg_autostart][:disabled_services] = ['mysql-server', 'apache2']
 ```
 
-# Info
-* Repository: https://github.com/hw-cookbooks/dpkg_autostart
-* IRC: Freenode @ #heavywater
 
 ## Related
 * deb_pkg_unautostart: http://ckbk.it/deb_pkg_unautostart
