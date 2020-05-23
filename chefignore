@@ -102,7 +102,7 @@ CONTRIBUTING*
 TESTING*
 CODE_OF_CONDUCT*
 
-# Vagrant #
+## vagrant #
 ###########
 .vagrant
 Vagrantfile
