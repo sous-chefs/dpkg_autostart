@@ -10,12 +10,12 @@
 dictates. This can be annoying and problematic, especially when you don't
 want services to be immediately started before custom configuration can
 be applied. Instead of disabling all services from auto starting on installation
-as the `dpkg_deb_unautostart` cookbook does, lets allow specifc services
+as the `dpkg_deb_unautostart` cookbook does, lets allow specific services
 to be targeted.
 
 ## Usage
 
-### LWRP
+### Resource
 
 Include the cookbook as a dependency in your metadata:
 
@@ -23,7 +23,7 @@ Include the cookbook as a dependency in your metadata:
 depends 'dpkg_autostart'
 ```
 
-Then, within your recipe, disable the service with the LWRP:
+Then, within your recipe, disable the service with the resource:
 
 ```ruby
 dpkg_autostart 'mysql-server' do
@@ -48,12 +48,12 @@ run_list 'recipe[dpkg_autostart]'
 and set the services you want to restrict from auto starting:
 
 ```ruby
-node[:dpkg_autostart][:disabled_services] = ['mysql-server', 'apache2']
+node.default['dpkg_autostart']['disabled_services'] = ['mysql-server', 'apache2']
 ```
 
-
 ## Related
-* deb_pkg_unautostart: http://ckbk.it/deb_pkg_unautostart
+
+* deb_pkg_unautostart: <http://ckbk.it/deb_pkg_unautostart>
 
 ## Contributors
 
