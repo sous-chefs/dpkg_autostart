@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the dpkg_autostart cookbook.
 
+## Unreleased
+
+- resolved cookstyle error: libraries/resource.rb:8:7 warning: `ChefDeprecations/ResourceUsesOnlyResourceName`
+
 ## v0.3.0 (2020-05-22)
 
 - Transferred ownership of this cookbook to Sous Chefs

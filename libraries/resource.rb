@@ -5,7 +5,7 @@ class Chef
     class DpkgAutostart < Chef::Resource
       allowed_actions [:nothing, :create]
 
-      resource_name :dpkg_autostart
+      provides :dpkg_autostart
 
       default_action :nothing
 
