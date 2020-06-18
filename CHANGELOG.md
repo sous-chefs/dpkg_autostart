@@ -2,7 +2,7 @@
 
 This file is used to list changes made in each version of the dpkg_autostart cookbook.
 
-## UNRELEASED
+## 0.4.0 (2020-06-18)
 
 - Restore Chef Infra Client < 16 compatibility
 
