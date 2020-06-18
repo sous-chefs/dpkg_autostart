@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the dpkg_autostart cookbook.
 
+## UNRELEASED
+
+- Restore Chef Infra Client < 16 compatibility
+
 ## v0.3.1 (2020-06-02)
 
 - resolved cookstyle error: libraries/resource.rb:8:7 warning: `ChefDeprecations/ResourceUsesOnlyResourceName`
