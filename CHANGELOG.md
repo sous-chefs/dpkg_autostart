@@ -2,6 +2,11 @@
 
 This file is used to list changes made in each version of the dpkg_autostart cookbook.
 
+## Unreleased
+
+- resolved cookstyle error: libraries/provider.rb:13:7 refactor: `ChefModernize/ActionMethodInResource`
+- resolved cookstyle error: libraries/provider.rb:17:7 refactor: `ChefModernize/ActionMethodInResource`
+
 ## 0.4.0 (2020-06-18)
 
 - Restore Chef Infra Client < 16 compatibility
