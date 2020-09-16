@@ -2,7 +2,7 @@
 
 This file is used to list changes made in each version of the dpkg_autostart cookbook.
 
-## Unreleased
+## 0.4.1 (2020-09-16)
 
 - resolved cookstyle error: libraries/provider.rb:13:7 refactor: `ChefModernize/ActionMethodInResource`
 - resolved cookstyle error: libraries/provider.rb:17:7 refactor: `ChefModernize/ActionMethodInResource`
