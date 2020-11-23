@@ -2,7 +2,7 @@
 
 This file is used to list changes made in each version of the dpkg_autostart cookbook.
 
-## 0.4.2 (2020-10-23)
+## Unreleased
 
 - Fix regression introduced in 0.4.1, of undefined method `action` being received
 
