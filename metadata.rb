@@ -5,7 +5,7 @@ description       'Control service actions initialized from dpkg'
 license           'Apache-2.0'
 source_url        'https://github.com/sous-chefs/dpkg_autostart'
 issues_url        'https://github.com/sous-chefs/dpkg_autostart/issues'
-version           '0.4.1'
+version           '0.4.2'
 chef_version      '>= 12.15'
 
 supports 'ubuntu'
