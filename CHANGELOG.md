@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the dpkg_autostart cookbook.
 
+## Unreleased
+
+- Fix regression introduced in 0.4.1, of undefined method `action` being received
+
 ## 0.4.1 (2020-09-16)
 
 - resolved cookstyle error: libraries/provider.rb:13:7 refactor: `ChefModernize/ActionMethodInResource`
