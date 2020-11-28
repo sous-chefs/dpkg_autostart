@@ -10,11 +10,11 @@ class Chef
       def load_current_resource
       end
 
-      def action_run
+      action :run do
         Chef::Log.debug 'DpkgAutostart: Compat method. Action does nothing.'
       end
 
-      def action_create
+      action :create do
         template = Chef::Resource::Template.new('dpkg_autostart_file', run_context)
         template.cookbook 'dpkg_autostart'
         template.source 'policy-rc.d.erb'

@@ -4,6 +4,8 @@ This file is used to list changes made in each version of the dpkg_autostart coo
 
 ## Unreleased
 
+- resolved cookstyle error: libraries/provider.rb:13:7 refactor: `Chef/Modernize/ActionMethodInResource`
+- resolved cookstyle error: libraries/provider.rb:17:7 refactor: `Chef/Modernize/ActionMethodInResource`
 ## 0.4.2 - *2020-11-27*
 
 - Fix regression introduced in 0.4.1, of undefined method `action` being received
