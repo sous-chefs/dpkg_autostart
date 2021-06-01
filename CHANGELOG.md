@@ -2,7 +2,7 @@
 
 This file is used to list changes made in each version of the dpkg_autostart cookbook.
 
-## Unreleased
+## 0.4.3 - *2021-06-01*
 
 - resolved cookstyle error: test/cookbooks/test/metadata.rb:4:25 convention: `Layout/TrailingEmptyLines`
 ## 0.4.2 - *2020-11-27*
