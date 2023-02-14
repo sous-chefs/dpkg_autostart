@@ -2,6 +2,8 @@
 
 This file is used to list changes made in each version of the dpkg_autostart cookbook.
 
+## Unreleased
+
 ## 0.4.5 - *2023-02-14*
 
 - Remove delivery folder
