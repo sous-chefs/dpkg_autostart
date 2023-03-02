@@ -4,6 +4,8 @@ This file is used to list changes made in each version of the dpkg_autostart coo
 
 ## Unreleased
 
+- Standardise files with files in sous-chefs/repo-management
+
 ## 0.4.5 - *2023-02-14*
 
 - Remove delivery folder
