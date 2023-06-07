@@ -4,6 +4,8 @@ This file is used to list changes made in each version of the dpkg_autostart coo
 
 ## Unreleased
 
+Standardise files with files in sous-chefs/repo-management
+
 ## 0.4.10 - *2023-05-17*
 
 ## 0.4.9 - *2023-05-03*
