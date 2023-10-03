@@ -53,7 +53,7 @@ node.default['dpkg_autostart']['disabled_services'] = ['mysql-server', 'apache2'
 
 ## Related
 
-- deb_pkg_unautostart: <http://ckbk.it/deb_pkg_unautostart>
+- [deb_pkg_unautostart](https://github.com/sous-chefs/deb_pkg_unautostart)
 
 ## Contributors
 

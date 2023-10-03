@@ -4,6 +4,8 @@ This file is used to list changes made in each version of the dpkg_autostart coo
 
 ## Unreleased
 
+Fix markdown
+
 ## 0.4.11 - *2023-06-08*
 
 Standardise files with files in sous-chefs/repo-management
@@ -65,12 +67,12 @@ Standardise files with files in sous-chefs/repo-management
 
 ## v0.2.0
 
-_NOTE_: Release introduces minor breaking change due to updated interaction with resource collection.
+*NOTE*: Release introduces minor breaking change due to updated interaction with resource collection.
 
 - Fix script syntax in bin file (#7 thanks @hamann!)
 - Allow multiple services and actions (#7 thanks @hamann!)
 - Use `ResourceCollection#insert` when adding bin resource
-  - _NOTE_: This may require updating resource locations or adding the default recipe to the beginning of the run list
+  - *NOTE*: This may require updating resource locations or adding the default recipe to the beginning of the run list
 
 ## v0.1.12
 
