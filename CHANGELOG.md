@@ -2,6 +2,8 @@
 
 This file is used to list changes made in each version of the dpkg_autostart cookbook.
 
+## Unreleased
+
 ## 0.4.13 - *2024-05-02*
 
 ## 0.4.12 - *2023-09-29*
