@@ -60,7 +60,7 @@ Standardise files with files in sous-chefs/repo-management
 * Fix script syntax in bin file (#7 thanks @hamann!)
 * Allow multiple services and actions (#7 thanks @hamann!)
 * Use `ResourceCollection#insert` when adding bin resource
-  - *NOTE*: This may require updating resource locations or adding the default recipe to the beginning of the run list
+  * *NOTE*: This may require updating resource locations or adding the default recipe to the beginning of the run list
 
 ## v0.1.12
 
@@ -74,7 +74,7 @@ Standardise files with files in sous-chefs/repo-management
 
 * Add support for Chef 10 (#3)
 * Properly update `resource_collection` when unshifting (#4)
-  - Thanks @mpasternacki
+  * Thanks @mpasternacki
 
 ## v0.1.6
 
