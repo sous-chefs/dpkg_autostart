@@ -4,6 +4,7 @@ class Chef
   class Resource
     class DpkgAutostart < Chef::Resource
       allowed_actions [:nothing, :create]
+      unified_mode true
 
       resource_name :dpkg_autostart
       provides :dpkg_autostart
