@@ -2,6 +2,13 @@
 
 This file is used to list changes made in each version of the dpkg_autostart cookbook.
 
+## [0.4.16](https://github.com/sous-chefs/dpkg_autostart/compare/0.4.15...v0.4.16) (2025-10-15)
+
+
+### Bug Fixes
+
+* **ci:** Update workflows to use release pipeline ([#59](https://github.com/sous-chefs/dpkg_autostart/issues/59)) ([276fd92](https://github.com/sous-chefs/dpkg_autostart/commit/276fd92566ef21c25919e822b14321d0813db1dc))
+
 ## 0.4.11 - *2023-06-08*
 
 Standardise files with files in sous-chefs/repo-management
