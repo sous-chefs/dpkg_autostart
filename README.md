@@ -58,10 +58,6 @@ across all `dpkg_autostart` resources in the run.
 
 * [dpkg_autostart resource](documentation/dpkg_autostart_dpkg_autostart.md)
 
-## Related
-
-* deb_pkg_unautostart: <http://ckbk.it/deb_pkg_unautostart>
-
 ## Contributors
 
 This project exists thanks to all the people who [contribute.](https://opencollective.com/sous-chefs/contributors.svg?width=890&button=false)
