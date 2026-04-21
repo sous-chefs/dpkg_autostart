@@ -15,18 +15,21 @@ to be targeted.
 
 ## Usage
 
-### Resource
-
 Include the cookbook as a dependency in your metadata:
 
 ```ruby
 depends 'dpkg_autostart'
 ```
 
-Then, within your recipe, disable the service with the resource:
+Declare one `dpkg_autostart` resource for each service you want to suppress
+during package installation:
 
 ```ruby
 dpkg_autostart 'mysql-server' do
+  allow false
+end
+
+dpkg_autostart 'apache2' do
   allow false
 end
 ```
@@ -36,24 +39,28 @@ via `apt`) it will be instructed not to. This allows the proper configuration
 files to be generated, and the service to be started after everything is
 ready.
 
-### Attribute
+### Customizing blocked actions
 
-You can also provide a list of services to disable via node attribute. Add
-the default recipe to the run list:
-
-```ruby
-run_list 'recipe[dpkg_autostart]'
-```
-
-and set the services you want to restrict from auto starting:
+By default the generated `policy-rc.d` script blocks `start` and `restart`.
+You can extend the blocked action list:
 
 ```ruby
-node.default['dpkg_autostart']['disabled_services'] = ['mysql-server', 'apache2']
+dpkg_autostart 'mysql-server' do
+  allow false
+  disable_actions %w(start restart reload)
+end
 ```
+
+`policy-rc.d` is a single global file, so `disable_actions` values are merged
+across all `dpkg_autostart` resources in the run.
+
+## Resource Documentation
+
+* [dpkg_autostart resource](documentation/dpkg_autostart_dpkg_autostart.md)
 
 ## Related
 
-- deb_pkg_unautostart: <http://ckbk.it/deb_pkg_unautostart>
+* deb_pkg_unautostart: <http://ckbk.it/deb_pkg_unautostart>
 
 ## Contributors
 
