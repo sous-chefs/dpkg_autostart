@@ -1,12 +1,7 @@
 #!/bin/bash
 
-DISABLE_ACTIONS=( <%= node[:dpkg_autostart][:disable_actions].join(' ') %> )
-DISABLED_SERVICES=( <%= 
-(
-    Array(node[:dpkg_autostart][:disabled_services]) +
-    Array(node.run_state[:dpkg_autostart_disabled])
-).uniq.join(' ') 
-%> )
+DISABLE_ACTIONS=( <%= @disable_actions.join(' ') %> )
+DISABLED_SERVICES=( <%= @disabled_services.join(' ') %> )
 
 longoptions='quiet,force,try-anyway,disclose-deny,query,no-fallback,help'
 getopt=$(getopt -o '' --longoptions $longoptions -- "$@")

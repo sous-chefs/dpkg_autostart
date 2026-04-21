@@ -1,0 +1,7 @@
+---
+name: default
+title: Default integration tests for dpkg_autostart
+maintainer: Sous Chefs
+license: Apache-2.0
+summary: Verifies the dpkg_autostart resource
+version: 1.0.0
