@@ -2,6 +2,18 @@
 
 This cookbook migrated from attribute-driven recipe setup to a single custom resource.
 
+## Breaking change for operators upgrading older releases
+
+This is a breaking change for any wrapper cookbook, role, or policy that
+still includes `dpkg_autostart::default` or sets `node['dpkg_autostart']`
+attributes. The recipe and attribute interfaces were removed, so existing
+attribute-driven configuration must be rewritten to use `dpkg_autostart`
+resources directly before you upgrade.
+
+If you upgrade without making that change, the old recipe include and
+attribute configuration will no longer manage `policy-rc.d` for your
+services.
+
 ## What changed
 
 * `attributes/default.rb` was removed.
