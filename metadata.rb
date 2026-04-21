@@ -5,7 +5,7 @@ description       'Provides the dpkg_autostart resource for suppressing service 
 license           'Apache-2.0'
 source_url        'https://github.com/sous-chefs/dpkg_autostart'
 issues_url        'https://github.com/sous-chefs/dpkg_autostart/issues'
-version           '0.4.16'
+version           '1.0.0'
 chef_version      '>= 15.3'
 
 supports 'debian', '>= 12.0'
