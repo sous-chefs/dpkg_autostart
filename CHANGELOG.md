@@ -2,6 +2,23 @@
 
 This file is used to list changes made in each version of the dpkg_autostart cookbook.
 
+## [1.0.0](https://github.com/sous-chefs/dpkg_autostart/compare/v0.4.16...v1.0.0) (2026-04-21)
+
+### ⚠ BREAKING CHANGES
+
+* Upgrading from releases that used recipes/default.rb and attributes/default.rb now requires replacing that configuration with dpkg_autostart resources before upgrading.
+
+### Features
+
+* document custom resource migration ([#68](https://github.com/sous-chefs/dpkg_autostart/issues/68)) ([e91384c](https://github.com/sous-chefs/dpkg_autostart/commit/e91384c14b53cad00a3cf1b03e42d6a9af3887f1))
+* migrate dpkg_autostart resource ([97cfd57](https://github.com/sous-chefs/dpkg_autostart/commit/97cfd575f59c32b208e59da32d48353e002f1724))
+
+### Bug Fixes
+
+* **ci:** Update workflows to use release pipeline ([#59](https://github.com/sous-chefs/dpkg_autostart/issues/59)) ([276fd92](https://github.com/sous-chefs/dpkg_autostart/commit/276fd92566ef21c25919e822b14321d0813db1dc))
+* pass Slack secrets to release workflow ([5cd2327](https://github.com/sous-chefs/dpkg_autostart/commit/5cd232715589eb7e7c1c450cd3f62dc55e28c34a))
+* pin cinc installer action ([d0499de](https://github.com/sous-chefs/dpkg_autostart/commit/d0499debb66925efa166d4c802d9a060008a3833))
+
 ## [0.4.16](https://github.com/sous-chefs/dpkg_autostart/compare/0.4.15...v0.4.16) (2025-10-15)
 
 ### Bug Fixes
