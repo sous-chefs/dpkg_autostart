@@ -13,6 +13,17 @@ be applied. Instead of disabling all services from auto starting on installation
 as the `dpkg_deb_unautostart` cookbook does, lets allow specific services
 to be targeted.
 
+## Breaking change for upgrades
+
+Upgrading from older cookbook releases that used `recipes/default.rb` and
+`attributes/default.rb` is a breaking change. Those recipe and attribute
+entry points were removed when the cookbook moved to the `dpkg_autostart`
+custom resource.
+
+Before upgrading, replace any `include_recipe 'dpkg_autostart::default'`
+usage and any `node['dpkg_autostart']` attribute configuration with one
+`dpkg_autostart` resource per service. See [migration.md](migration.md).
+
 ## Usage
 
 Include the cookbook as a dependency in your metadata:
