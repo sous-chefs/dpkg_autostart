@@ -4,7 +4,6 @@ This file is used to list changes made in each version of the dpkg_autostart coo
 
 ## [1.0.0](https://github.com/sous-chefs/dpkg_autostart/compare/v0.4.16...v1.0.0) (2026-04-21)
 
-
 ### ⚠ BREAKING CHANGES
 
 * Upgrading from releases that used recipes/default.rb and attributes/default.rb now requires replacing that configuration with dpkg_autostart resources before upgrading.
@@ -13,7 +12,6 @@ This file is used to list changes made in each version of the dpkg_autostart coo
 
 * document custom resource migration ([#68](https://github.com/sous-chefs/dpkg_autostart/issues/68)) ([e91384c](https://github.com/sous-chefs/dpkg_autostart/commit/e91384c14b53cad00a3cf1b03e42d6a9af3887f1))
 * migrate dpkg_autostart resource ([97cfd57](https://github.com/sous-chefs/dpkg_autostart/commit/97cfd575f59c32b208e59da32d48353e002f1724))
-
 
 ### Bug Fixes
 
